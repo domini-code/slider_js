@@ -13,9 +13,6 @@ https://gist.github.com/bezael/665d57d7a90c17ae781ceb26c6bdd7dc
 Banco de Imagenes:
 https://pixabay.com/
 
-
-Código del proyecto: https://github.com/bezael/slider_js
-
 Facebook: https://www.facebook.com/dominicodee/
 
 Twitter : https://twitter.com/domini_code
