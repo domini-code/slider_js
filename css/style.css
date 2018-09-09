@@ -1,0 +1,144 @@
+/*THE MINIFIED RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+/*self clearfixing*/
+section:before, section:after, article:before, article:after {clear: both; content: ""; display: table;}
+/* new clearfix */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END RESET*/
+
+
+/*style slider*/
+
+
+body, html{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.center_y{
+  position: relative;
+  top:50%;
+  transform: translateX(-50%);
+}
+
+.center_x{
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+#slider-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-arrow{
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+}
+
+
+#arrow-prev{
+  left: 20px;
+}
+
+#arrow-next{
+  right: 20px;
+}
+
+#dots-wrapper{
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+}
+
+.dot-nav{
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 0 8px;
+  border: 2px solid #d6d6d6;
+}
+
+.dot-nav:hover{
+  background-color: #d6d6d6;
+}
+
+.active-dot{
+  background-color: #d6d6d6;
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@keyframes fade{
+  from {opacity: .4}
+  to { opacity: 1}
+}
